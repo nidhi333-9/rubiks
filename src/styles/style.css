@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width of the scrollbar */
+  height: 8px; /* Optional: if you want to style horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light gray background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ec4899; /* Pink color for the scrollbar thumb */
+  border-radius: 10px; /* Optional: Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d1607f; /* Darker pink color when hovering over the scrollbar */
+}
