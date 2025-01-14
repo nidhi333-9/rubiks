@@ -4,6 +4,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        main: 'index.html',
         teams: './src/pages/teams.html',
         dance: './src/pages/dance.html',
         design: './src/pages/design.html',
