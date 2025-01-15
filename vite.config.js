@@ -12,6 +12,7 @@ export default defineConfig({
         photography: './src/pages/photography.html',
         video: './src/pages/video.html',
        web: './src/pages/web.html',
+       register: './src/pages/register.html'
       }
     }
   }

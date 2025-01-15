@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
@@ -12,9 +13,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    <title>Photography Team</title>
+    <title>Register</title>
   </head>
-  <body class="overflow-auto h-64">
+  <body>
     <header>
       <div class="hidden md:flex justify-center p-2 gap-4">
         <div>
@@ -58,55 +59,123 @@
         </div>
       </nav>
     </header>
+    <div
+      class="container mx-auto py-10 px-5 bg-white shadow-md rounded-lg p-6 w-full max-w-md"
+    >
+      <h2
+        class="text-2xl font-bold font-heading text-blue-600 text-center mb-6"
+      >
+        Rubiks Registration
+      </h2>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-1"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            class="w-full border border-blue-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
 
-    <main class="container mx-auto py-10 px-5">
-      <h1 class="text-4xl font-bold text-pink-600 mb-5">Design Team</h1>
+        <div>
+          <label
+            for="email"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="w-full border border-blue-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
 
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-600">Team Head:</h2>
-        <p class="text-gray-700 text-lg">Chris Adams</p>
-      </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Teams</label
+          >
+          <div class="flex flex-col space-y-2">
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                name="team"
+                value="design"
+                class="h-4 w-4 text-blue-600 border-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+              />
+              <span class="ml-2 text-gray-700">Web Development</span>
+            </label>
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                name="team"
+                value="development"
+                class="h-4 w-4 text-blue-600 border-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+              />
+              <span class="ml-2 text-gray-700">Photography</span>
+            </label>
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                name="team"
+                value="marketing"
+                class="h-4 w-4 text-blue-600 border-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+              />
+              <span class="ml-2 text-gray-700">Design</span>
+            </label>
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                name="team"
+                value="marketing"
+                class="h-4 w-4 text-blue-600 border-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+              />
+              <span class="ml-2 text-gray-700">Dance & Song</span>
+            </label>
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                name="team"
+                value="marketing"
+                class="h-4 w-4 text-blue-600 border-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+              />
+              <span class="ml-2 text-gray-700">Video & Audio Editing</span>
+            </label>
+          </div>
+        </div>
 
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-600">Members:</h2>
-        <ul class="list-disc pl-5 text-gray-700 text-lg">
-          <li>Emma Davis</li>
-          <li>James Miller</li>
-          <li>Olivia Garcia</li>
-          <li>Lucas Martinez</li>
-        </ul>
-      </div>
+        <div>
+          <label
+            for="comments"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Reason</label
+          >
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Please write the reason for Join the about team/teams"
+            rows="4"
+            class="w-full border border-blue-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+        </div>
 
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-600">Details:</h2>
-        <p class="text-gray-700 text-lg">
-          The Design Team is responsible for creating visually appealing
-          posters, banners, and graphics for the club's events. They bring
-          creativity and innovation to the club's identity through their
-          designs.
-        </p>
-      </div>
-
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-600">
-          Required Skill Set:
-        </h2>
-        <ul class="list-disc pl-5 text-gray-700 text-lg">
-          <li>Graphic design and layout skills</li>
-          <li>Proficiency in tools like Photoshop, Illustrator, or Canva</li>
-          <li>Creativity and attention to detail</li>
-        </ul>
-      </div>
-
-      <div class="text-center">
-        <button
-          class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500"
-        >
-          <a href="./register.html">Register Now</a>
-        </button>
-      </div>
-    </main>
-
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white rounded-lg px-4 py-2 font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
     <footer class="bg-gray-800 text-gray-200 py-8">
       <div class="max-w-5xl mx-auto px-4 sm:flex justify-between">
         <!-- About Section -->
@@ -163,14 +232,12 @@
           </div>
         </div>
       </div>
-
-      <!-- Copyright -->
       <div
         class="text-center text-gray-400 text-sm mt-8 border-t border-gray-700 pt-4"
       >
         © 2025 Rubik's Club. All Rights Reserved.
       </div>
     </footer>
-    <script type="module" src="../js/main.js"></script>
+    <script src="../js/main.js" type="module"></script>
   </body>
 </html>
